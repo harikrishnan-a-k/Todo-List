@@ -1,0 +1,17 @@
+body{
+    background-color: blueviolet;
+}
+
+.listContainer{
+    background: darkblue;
+    color:white;
+    padding: 10px;
+}
+.listContainer ul li{
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+.completed{
+    color: green;;
+    text-decoration: line-through;
+}
