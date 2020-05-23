@@ -51,3 +51,13 @@ $(function () {
         $(this).remove();
     });
 });
+
+$(function(){
+    if($(window).width()<600){
+        console.log('mobile script runs...');
+        $(document).on('click','.listContainer ul li',function(){
+            $(this).children('.delete').toggleClass('deleteMobileStyles');
+        });
+    }
+    
+})

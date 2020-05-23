@@ -73,6 +73,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
         background-color:transparent;
     }
 } */
-h3{
-    color:red;
+.deleteMobileStyles{
+    width:40px;
+    opacity:1;
 }
