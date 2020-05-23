@@ -1,3 +1,4 @@
+// adding sortable drag and drop functionality
 $( function() {
     $( "#list" ).sortable();
     $( "#list" ).disableSelection();
