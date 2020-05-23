@@ -61,7 +61,15 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
     opacity: 0;
     transition: 0.5s linear;
 }
-.listContainer ul li:hover .delete{
+.listContainer ul li:hover .delete,.listContainer ul li:active .delete{
     width:40px;
     opacity:1;
 }
+/* @media (max-width:576px){
+    .delete{
+        width:40px;
+        opacity:1;
+        margin-right: 10px;
+        background-color:transparent;
+    }
+} */
