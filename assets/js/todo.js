@@ -24,6 +24,8 @@ $('#inputText').keypress(function(e){
         let text=$(this).val();
         $('.listContainer ul').append(`<li><span class="delete"><i class="fas fa-trash-alt"></i></span> <span class="todo text-capitalize">${text}</span> </li>`);
         $(this).val('');
+        // let liHeight=$('.listContainer ul li:last-child').outerHeight()
+        //  $('.listContainer ul li:last-child .delete').css('height',`${liHeight}px`);
     }
 })
 
@@ -51,7 +53,7 @@ $(function () {
         $(this).remove();
     });
 });
-
+// delete button toggle for mobile because hover css do not work for mobile
 $(function(){
     if($(window).width()<600){
         console.log('mobile script runs...');

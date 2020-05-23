@@ -28,8 +28,10 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
     list-style-type: none;
     font-size: 1.2rem;
     background-color: rgb(1, 191, 197);
-    height: 40px;
+    min-height: 40px;
     line-height: 40px;
+    display: flex;
+    flex-direction: row;
 }
 .listContainer ul li:nth-of-type(even){
     background: rgb(2, 169, 175);
@@ -52,18 +54,22 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 }
 
 .delete{
+    
     background: #e74c3c;
-    height: 40px;
+    min-height: 40px;
+    height:inherit;
     margin-right: 20px;
     text-align: center;
     width: 0px;
     display: inline-block;
     opacity: 0;
     transition: 0.5s linear;
+
 }
 .listContainer ul li:hover .delete,.listContainer ul li:active .delete{
     width:40px;
     opacity:1;
+    min-width: 40px;
 }
 /* @media (max-width:576px){
     .delete{
@@ -75,5 +81,6 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 } */
 .deleteMobileStyles{
     width:40px;
+    min-width: 40px;
     opacity:1;
 }
